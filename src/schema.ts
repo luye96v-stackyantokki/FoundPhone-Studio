@@ -46,6 +46,7 @@ export const actionSchema = z.object({
   type: z.enum([
     "date",
     "variable",
+    "variable_delta",
     "unlock",
     "hide",
     "notification",
