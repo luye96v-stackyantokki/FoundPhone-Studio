@@ -37,6 +37,13 @@ function apply(a: Action, s: Runtime, w: Work) {
     case "variable":
       s.variables[a.key] = a.value;
       break;
+    case "variable_delta": {
+      const current = s.variables[a.key];
+      if (typeof current === "number" && typeof a.value === "number") {
+        s.variables[a.key] = Math.max(0, Math.min(100, current + a.value));
+      }
+      break;
+          }
     case "unlock":
       if (!s.unlocked.includes(a.key)) s.unlocked.push(a.key);
       break;
