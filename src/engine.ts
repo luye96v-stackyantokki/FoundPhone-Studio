@@ -23,8 +23,10 @@ export function testCondition(c: Condition, s: Runtime): boolean {
       return actual !== c.value;
     case "gt":
       return typeof actual === "number" && actual > Number(c.value);
+    case "lt":
+      return typeof actual === "number" && actual < Number(c.value);
     case "lte":
-  return typeof actual === "number" && actual <= Number(c.value);
+      return typeof actual === "number" && actual <= Number(c.value);
     case "includes":
       return String(actual ?? "").includes(String(c.value));
   }
