@@ -38,7 +38,7 @@ export const itemSchema = z.object({
 export type Item = z.infer<typeof itemSchema>;
 export const conditionSchema = z.object({
   key: z.string(),
-  op: z.enum(["eq", "neq", "gt", "lt", "includes"]),
+  op: z.enum(["eq", "neq", "gt", "lt", "lte", "includes"]),
   value: z.union([z.string(), z.number(), z.boolean()]),
 });
 export type Condition = z.infer<typeof conditionSchema>;
