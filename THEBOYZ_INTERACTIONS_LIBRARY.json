@@ -1,0 +1,2780 @@
+{
+  "version": 5,
+  "fictional": true,
+  "shortcuts": [
+    "在干嘛",
+    "抱抱",
+    "想你了",
+    "夸夸我",
+    "哄我",
+    "要打电话吗"
+  ],
+  "addressing": {
+    "affection_lte_60": "【玩家昵称】",
+    "affection_gt_60": [
+      "公主",
+      "宝宝"
+    ],
+    "strictly_greater_than": 60
+  },
+  "cooldown": "建议每成员每快捷键每天一次；运行时待实现",
+  "scenes": [
+    {
+      "id": "jealous-story",
+      "title": "吃醋｜和谁出去玩",
+      "trigger": "Instagram 异性朋友快拍",
+      "opening": "今天出去玩了？\n看你发的快拍了ㅎㅎ",
+      "options": [
+        {
+          "text": "和朋友一起吃饭啦",
+          "reply_lte_60": "哦哦，玩得开心吗？照片里你旁边那个人是谁啊ㅋㅋ",
+          "affection_delta": 1,
+          "flirt_delta": 0
+        },
+        {
+          "text": "哥哥怎么突然查岗",
+          "reply_lte_60": "ㅋㅋ什么查岗，就是问问。不可以问吗？",
+          "affection_delta": 1,
+          "flirt_delta": 2
+        },
+        {
+          "text": "哥哥吃醋了？",
+          "reply_lte_60": "没有啊ㅋㅋ我干嘛吃醋，就是有点好奇。",
+          "affection_delta": 2,
+          "flirt_delta": 2,
+          "reply_gt_60": "……嗯，一点点。所以现在可以哄哄我吗？"
+        }
+      ]
+    },
+    {
+      "id": "jealous-like",
+      "title": "吃醋｜点赞",
+      "trigger": "给其他成员Instagram点赞",
+      "opening": "ㅋㅋㅋㅋ\n你最近很喜欢【另一位成员】吗？",
+      "options": [
+        {
+          "text": "他很帅啊ㅋㅋ",
+          "reply_lte_60": "啊……原来如此。那我呢？",
+          "affection_delta": 0,
+          "flirt_delta": 1
+        },
+        {
+          "text": "哥哥连这个都看到了？",
+          "reply_lte_60": "偶然看到的ㅎㅎ真的只是偶然。",
+          "affection_delta": 1,
+          "flirt_delta": 2
+        },
+        {
+          "text": "我最喜欢的还是哥哥",
+          "reply_lte_60": "ㅋㅋ突然说什么呢，好啦知道了ㅎㅎ",
+          "affection_delta": 2,
+          "flirt_delta": 2,
+          "reply_gt_60": "……真的？那再说一遍。想听。"
+        }
+      ]
+    },
+    {
+      "id": "jealous-oppa",
+      "title": "吃醋｜称呼哥哥",
+      "trigger": "群聊中称其他成员哥哥",
+      "opening": "刚刚在群里，你叫他哥哥了？ㅋㅋ",
+      "options": [
+        {
+          "text": "他本来就比我大",
+          "reply_lte_60": "嗯，确实……没事ㅋㅋ",
+          "affection_delta": 0,
+          "flirt_delta": 1
+        },
+        {
+          "text": "哥哥不喜欢我这么叫别人？",
+          "reply_lte_60": "没有不喜欢啊，就是突然觉得有点奇怪ㅋㅋ",
+          "affection_delta": 1,
+          "flirt_delta": 2,
+          "reply_gt_60": "嗯。不太喜欢。但我也不能说什么吧ㅎㅎ"
+        },
+        {
+          "text": "那以后只叫你哥哥？",
+          "reply_lte_60": "……你自己说的哦ㅋㅋㅋ",
+          "affection_delta": 2,
+          "flirt_delta": 2
+        }
+      ]
+    },
+    {
+      "id": "jealous-dog",
+      "title": "吃醋｜别的小狗",
+      "trigger": "两天未联系且和别人互动",
+      "opening": "【玩家昵称】，最近很忙吗？还是有别的小狗了ㅋㅋ",
+      "options": [
+        {
+          "text": "没有呀，只有你一只",
+          "reply_lte_60": "什么啊ㅋㅋ怎么突然把我当小狗了",
+          "affection_delta": 2,
+          "flirt_delta": 2,
+          "reply_gt_60": "ㅋㅋ那摸摸头。今天有乖乖等你。"
+        },
+        {
+          "text": "哥哥是在等我消息吗",
+          "reply_lte_60": "……有时候吧。看到手机亮了会看一下。",
+          "affection_delta": 2,
+          "flirt_delta": 2
+        },
+        {
+          "text": "哥哥怎么这么黏人",
+          "reply_lte_60": "ㅋㅋ不喜欢吗？那我收敛一点。",
+          "affection_delta": 1,
+          "flirt_delta": 1
+        }
+      ]
+    },
+    {
+      "id": "jealous-coat",
+      "title": "吃醋｜外套",
+      "trigger": "Instagram宽大外套快拍",
+      "opening": "[回复你的快拍]\n外套挺好看的。新买的？",
+      "options": [
+        {
+          "text": "不是，朋友借我的",
+          "reply_lte_60": "啊，这样啊。那记得还给人家ㅋㅋ",
+          "affection_delta": 0,
+          "flirt_delta": 0
+        },
+        {
+          "text": "哥哥觉得好看吗",
+          "reply_lte_60": "嗯，你穿什么都挺好看的。",
+          "affection_delta": 1,
+          "flirt_delta": 2
+        },
+        {
+          "text": "哥哥的外套借我穿好不好",
+          "reply_lte_60": "ㅋㅋ可以啊，不过我的可能有点大。",
+          "affection_delta": 2,
+          "flirt_delta": 2,
+          "reply_gt_60": "好啊。下次见面给你。但是不准随便还给我ㅎㅎ"
+        }
+      ]
+    },
+    {
+      "id": "jealous-close",
+      "title": "吃醋｜熟不熟",
+      "trigger": "与其他成员互动频繁",
+      "opening": "你和【另一位成员】很熟吗？",
+      "options": [
+        {
+          "text": "还好吧怎么了",
+          "reply_lte_60": "没什么ㅎㅎ今天听他提到你了，感觉你们挺熟的。",
+          "affection_delta": 1,
+          "flirt_delta": 0
+        },
+        {
+          "text": "哥哥是不是有点在意",
+          "reply_lte_60": "ㅋㅋ你怎么什么都知道。好吧，有一点。",
+          "affection_delta": 1,
+          "flirt_delta": 2
+        },
+        {
+          "text": "哥哥希望我只和你玩吗",
+          "reply_lte_60": "不是那个意思。你当然可以和朋友玩。我只是……有时候也想被你优先选择。",
+          "affection_delta": 2,
+          "flirt_delta": 2
+        }
+      ]
+    },
+    {
+      "id": "cuddle",
+      "title": "撒娇｜抱抱",
+      "trigger": "快捷键：抱抱",
+      "opening": "哥哥，抱抱🥺",
+      "options": [
+        {
+          "text": "还要再抱一下！",
+          "reply_lte_60": "ㅋㅋ怎么这么贪心。好，再抱一下。",
+          "affection_delta": 1,
+          "flirt_delta": 2
+        },
+        {
+          "text": "今天有点不开心ㅠㅠ",
+          "reply_lte_60": "怎么了？要跟我说说吗？不想说也没关系。",
+          "affection_delta": 2,
+          "flirt_delta": 0
+        },
+        {
+          "text": "没有就是想撒娇",
+          "reply_lte_60": "ㅋㅋ那你继续。我听着呢。",
+          "affection_delta": 1,
+          "flirt_delta": 2
+        }
+      ]
+    },
+    {
+      "id": "miss",
+      "title": "撒娇｜想你了",
+      "trigger": "快捷键：想你了",
+      "opening": "哥哥，想你了ㅠㅠ",
+      "options": [
+        {
+          "text": "那哥哥现在来见我",
+          "reply_lte_60": "现在？ㅋㅋ我看看今天什么时候结束。如果来得及就见一面？",
+          "affection_delta": 2,
+          "flirt_delta": 2
+        },
+        {
+          "text": "哥哥不想我吗",
+          "reply_lte_60": "想啊。不然怎么会一直回你消息ㅋㅋ",
+          "affection_delta": 1,
+          "flirt_delta": 2
+        },
+        {
+          "text": "那哥哥亲亲我",
+          "reply_lte_60": "ㅋㅋ你今天怎么回事，突然这么大胆。",
+          "affection_delta": 1,
+          "flirt_delta": 2,
+          "reply_gt_60": "ㅋㅋ啵。满意了吗？"
+        }
+      ]
+    },
+    {
+      "id": "stay",
+      "title": "撒娇｜只陪我",
+      "trigger": "夜间主动聊天",
+      "opening": "哥哥，今天可以只陪我吗？",
+      "options": [
+        {
+          "text": "那我等你",
+          "reply_lte_60": "嗯。不会让你等太久。",
+          "affection_delta": 2,
+          "flirt_delta": 0
+        },
+        {
+          "text": "不可以现在就陪我吗🥺",
+          "reply_lte_60": "ㅠㅠ现在真的走不开。等我忙完好不好？到时候给你打电话。",
+          "affection_delta": 1,
+          "flirt_delta": 1
+        },
+        {
+          "text": "那算啦哥哥先忙",
+          "reply_lte_60": "嗯ㅎㅎ谢谢你理解。晚点联系。",
+          "affection_delta": 1,
+          "flirt_delta": 0
+        }
+      ]
+    },
+    {
+      "id": "nickname",
+      "title": "撒娇｜取昵称",
+      "trigger": "主动要求取昵称",
+      "opening": "哥哥给我取个昵称吧",
+      "options": [
+        {
+          "text": "想要只有哥哥会叫的名字",
+          "reply_lte_60": "ㅋㅋ那我得认真想想，不能随便取吧。",
+          "affection_delta": 2,
+          "flirt_delta": 2,
+          "reply_gt_60": "那……公主？ㅋㅋ怎么样，喜欢吗？"
+        },
+        {
+          "text": "因为哥哥总是叫我的名字",
+          "reply_lte_60": "ㅋㅋ原来是嫌弃我啊。好吧，我想想。",
+          "affection_delta": 1,
+          "flirt_delta": 0
+        },
+        {
+          "text": "哥哥喜欢怎么叫我",
+          "reply_lte_60": "我觉得你的昵称就挺好听的，真的ㅎㅎ",
+          "affection_delta": 1,
+          "flirt_delta": 2,
+          "reply_gt_60": "宝宝。……怎么了，不可以吗？ㅎㅎ"
+        }
+      ]
+    },
+    {
+      "id": "hangup",
+      "title": "撒娇｜不想挂电话",
+      "trigger": "视频通话结束前",
+      "opening": "我真的得睡了ㅋㅋ明天还要早起。\n你：不想挂ㅠㅠ",
+      "options": [
+        {
+          "text": "再陪我五分钟嘛",
+          "reply_lte_60": "五分钟？ㅋㅋ好，但是五分钟之后真的要睡了。",
+          "affection_delta": 1,
+          "flirt_delta": 2
+        },
+        {
+          "text": "那哥哥哄我睡觉",
+          "reply_lte_60": "ㅋㅋ我又不会讲睡前故事，要不放首歌给你听？",
+          "affection_delta": 2,
+          "flirt_delta": 2,
+          "reply_gt_60": "ㅋㅋ好啊，公主。闭上眼睛。晚安。"
+        },
+        {
+          "text": "那明天也要打电话",
+          "reply_lte_60": "ㅋㅋ看看明天安排，有空就打给你。",
+          "affection_delta": 1,
+          "flirt_delta": 0
+        }
+      ]
+    },
+    {
+      "id": "praise",
+      "title": "撒娇｜夸夸我",
+      "trigger": "快捷键：夸夸我",
+      "opening": "哥哥，快夸夸我！\nㅋㅋ怎么了，今天做了什么好事？",
+      "options": [
+        {
+          "text": "今天认真学习一整天",
+          "reply_lte_60": "哇真的？做得好ㅎㅎ我们【玩家昵称】真棒。",
+          "affection_delta": 2,
+          "flirt_delta": 0
+        },
+        {
+          "text": "什么都没做就是想听夸",
+          "reply_lte_60": "ㅋㅋ那我夸你什么好呢，今天也有好好吃饭吗？",
+          "affection_delta": 1,
+          "flirt_delta": 2,
+          "reply_gt_60": "ㅋㅋ宝宝今天也很可爱。这样可以吗？"
+        },
+        {
+          "text": "哥哥觉得我哪里最好",
+          "reply_lte_60": "嗯……跟你聊天很舒服，而且你总能让我笑。这样算夸奖吗？ㅎㅎ",
+          "affection_delta": 2,
+          "flirt_delta": 1
+        }
+      ]
+    },
+    {
+      "id": "comfort",
+      "title": "撒娇｜哄我",
+      "trigger": "快捷键：哄我",
+      "opening": "哥哥，哄我一下嘛ㅠㅠ",
+      "options": [
+        {
+          "text": "今天有点累",
+          "reply_lte_60": "辛苦了。先休息一下吧，我陪你聊一会儿。",
+          "affection_delta": 2,
+          "flirt_delta": 0
+        },
+        {
+          "text": "想听好听的话",
+          "reply_lte_60": "你今天已经很努力了ㅎㅎ",
+          "affection_delta": 1,
+          "flirt_delta": 1,
+          "reply_gt_60": "宝宝今天也很棒。过来，抱一下。"
+        },
+        {
+          "text": "讲个笑话给我",
+          "reply_lte_60": "ㅋㅋ我讲笑话可不一定好笑哦。",
+          "affection_delta": 1,
+          "flirt_delta": 1
+        }
+      ]
+    },
+    {
+      "id": "call",
+      "title": "互动｜要打电话吗",
+      "trigger": "快捷键：要打电话吗",
+      "opening": "哥哥，要打电话吗？",
+      "options": [
+        {
+          "text": "现在可以吗",
+          "reply_lte_60": "我看看……如果没有行程就打给你。",
+          "affection_delta": 1,
+          "flirt_delta": 1
+        },
+        {
+          "text": "想听哥哥声音",
+          "reply_lte_60": "ㅋㅋ突然？等我找个安静的地方。",
+          "affection_delta": 1,
+          "flirt_delta": 2
+        },
+        {
+          "text": "不方便就晚点",
+          "reply_lte_60": "嗯，忙完告诉你。谢谢你ㅎㅎ",
+          "affection_delta": 2,
+          "flirt_delta": 0
+        }
+      ]
+    }
+  ],
+  "video_call": {
+    "id": "video_call_daily_v1",
+    "version": 1,
+    "kind": "fictional_text_event_data",
+    "status": "剧情数据已收录；UI按钮、事件调度、视频画面及运行时分支尚未接入",
+    "trigger": [
+      "快捷键：要打电话吗",
+      "男主主动来电"
+    ],
+    "flow": [
+      "random_opening_1",
+      "random_interaction_1",
+      "fixed_ending"
+    ],
+    "daily_limit_per_member": 1,
+    "avoid_same_interaction_twice": true,
+    "addressing": {
+      "affection_lte_60": "【玩家昵称】",
+      "affection_gt_60": [
+        "公主",
+        "宝宝"
+      ],
+      "threshold_exclusive": 60
+    },
+    "openings": [
+      {
+        "id": "shower",
+        "title": "刚洗完澡",
+        "male": "喂？听得到吗？ㅋㅋ\n我刚洗完澡。头发还没吹干呢。",
+        "player": "那哥哥怎么不先吹头发？",
+        "male_reply": "因为有人想跟我打电话啊ㅎㅎ"
+      },
+      {
+        "id": "practice",
+        "title": "练习结束",
+        "male": "终于结束了ㅠㅠ\n今天真的好累。你在干嘛？",
+        "player": "在等哥哥呀。",
+        "male_reply": "ㅋㅋㅋ 那看来我打得正是时候。"
+      },
+      {
+        "id": "incoming",
+        "title": "突然来电",
+        "male": "没什么。就是突然想看看你。不可以吗？ㅎㅎ",
+        "player": "怎么突然打电话？",
+        "male_reply": "想看看你ㅎㅎ"
+      },
+      {
+        "id": "bed",
+        "title": "躺在床上",
+        "male": "喂——我已经躺好了ㅋㅋ\n今天不想动了。",
+        "player": "那哥哥早点睡呀。",
+        "male_reply": "等一下。才刚接通就要赶我走吗？"
+      },
+      {
+        "id": "voice",
+        "title": "想听声音",
+        "male": "【玩家昵称】。",
+        "player": "嗯？",
+        "male_reply": "没什么。就是想叫你一下ㅋㅋ 今天过得怎么样？"
+      }
+    ],
+    "interactions": [
+      {
+        "id": "comfort",
+        "title": "摸摸头",
+        "male": "今天真的有点累。感觉整个人都没电了ㅠㅠ",
+        "options": [
+          {
+            "text": "哥哥辛苦啦，摸摸头。",
+            "reply": "ㅎㅎ 那再摸一下。感觉好多了。",
+            "affection_delta": 2,
+            "flirt_delta": 1
+          },
+          {
+            "text": "那哥哥早点睡吧。",
+            "reply": "嗯。再聊一会儿就睡。",
+            "affection_delta": 1,
+            "flirt_delta": 0
+          },
+          {
+            "text": "要不要我给哥哥充电？",
+            "reply": "ㅋㅋㅋ 怎么充？先说好，我现在很需要。",
+            "affection_delta": 1,
+            "flirt_delta": 2
+          }
+        ]
+      },
+      {
+        "id": "camera",
+        "title": "一直看着我干嘛？",
+        "male": "ㅋㅋㅋ 你怎么一直看着我？",
+        "options": [
+          {
+            "text": "因为哥哥好看呀。",
+            "reply": "啊，真是的ㅋㅋ 你今天嘴怎么这么甜。",
+            "affection_delta": 1,
+            "flirt_delta": 2
+          },
+          {
+            "text": "明明是哥哥一直在看我！",
+            "reply": "我吗？ㅋㅋㅋ 好吧，被发现了。",
+            "affection_delta": 1,
+            "flirt_delta": 1
+          },
+          {
+            "text": "不可以看吗？",
+            "reply": "可以啊。那你继续看ㅎㅎ",
+            "affection_delta": 1,
+            "flirt_delta": 2
+          }
+        ]
+      },
+      {
+        "id": "clingy",
+        "title": "突然撒娇",
+        "male": "【玩家昵称】。哄哄我。",
+        "options": [
+          {
+            "text": "我们哥哥今天最棒啦！",
+            "reply": "ㅎㅎ 嗯。再夸一句。",
+            "affection_delta": 2,
+            "flirt_delta": 0
+          },
+          {
+            "text": "哥哥怎么突然变成小宝宝了ㅋㅋ",
+            "reply": "ㅋㅋㅋ 偶尔也想撒娇啊。不可以吗？",
+            "affection_delta": 1,
+            "flirt_delta": 2
+          },
+          {
+            "text": "那哥哥先叫我一声公主。",
+            "reply": "ㅋㅋㅋ 怎么突然提这个要求。先哄哄我嘛。",
+            "affection_delta": 1,
+            "flirt_delta": 2,
+            "reply_gt_60": "公主。ㅎㅎ 这样可以了吗？"
+          }
+        ],
+        "min_flirt": 60
+      },
+      {
+        "id": "miss",
+        "title": "今天有没有想我？",
+        "male": "问你个问题。今天有没有想我？",
+        "options": [
+          {
+            "text": "当然有呀！",
+            "reply": "ㅎㅎ 我也是。今天好几次想给你发消息。",
+            "affection_delta": 2,
+            "flirt_delta": 1
+          },
+          {
+            "text": "没有哦ㅋㅋ",
+            "reply": "……ㅋㅋㅋ 好吧，那我单方面想你了。",
+            "affection_delta": 0,
+            "flirt_delta": 1
+          },
+          {
+            "text": "哥哥先说你想了没有。",
+            "reply": "想了。现在轮到你回答了ㅎㅎ",
+            "affection_delta": 1,
+            "flirt_delta": 2
+          }
+        ]
+      },
+      {
+        "id": "day",
+        "title": "今天发生了什么？",
+        "male": "今天有没有什么有趣的事？",
+        "options": [
+          {
+            "text": "没有，普普通通的一天。",
+            "reply": "那也挺好的。平平淡淡的一天也不错ㅎㅎ",
+            "affection_delta": 1,
+            "flirt_delta": 0
+          },
+          {
+            "text": "今天一直在学习，好累ㅠㅠ",
+            "reply": "辛苦了。现在可以休息一下了。不要太累。",
+            "affection_delta": 2,
+            "flirt_delta": 0
+          },
+          {
+            "text": "最开心的事就是现在跟哥哥打电话。",
+            "reply": "……ㅋㅋㅋ 那我是不是应该多打几次？",
+            "affection_delta": 1,
+            "flirt_delta": 2
+          }
+        ]
+      },
+      {
+        "id": "tomorrow",
+        "title": "明天还打吗？",
+        "male": "对了。明天晚上有空吗？",
+        "options": [
+          {
+            "text": "哥哥要约我吗？",
+            "reply": "ㅋㅋㅋ 先问问你有没有时间。我明天应该能早点结束。",
+            "affection_delta": 1,
+            "flirt_delta": 2
+          },
+          {
+            "text": "有空呀，怎么啦？",
+            "reply": "那明天也打电话吧。如果工作没拖太晚的话ㅎㅎ",
+            "affection_delta": 2,
+            "flirt_delta": 0
+          },
+          {
+            "text": "看哥哥表现咯。",
+            "reply": "ㅋㅋㅋㅋ 那我要怎么表现？给点提示吧。",
+            "affection_delta": 1,
+            "flirt_delta": 2
+          }
+        ]
+      }
+    ],
+    "ending": {
+      "id": "video_call_unwilling_to_hang_up_11",
+      "male": "我真的得睡了ㅋㅋ\n明天还要早起。",
+      "player": "不想挂ㅠㅠ",
+      "options": [
+        {
+          "text": "再陪我五分钟嘛。",
+          "reply": "五分钟？ㅋㅋㅋ 好。但是五分钟之后真的要睡了。",
+          "affection_delta": 1,
+          "flirt_delta": 2,
+          "extend_minutes": 5
+        },
+        {
+          "text": "那哥哥哄我睡觉。",
+          "reply_lte_60": "ㅋㅋㅋ 我又不会讲睡前故事。要不放首歌给你听？",
+          "reply_gt_60": "ㅋㅋㅋ 好啊，【亲昵称呼】。闭上眼睛。晚安。",
+          "affection_delta": 2,
+          "flirt_delta": 2
+        },
+        {
+          "text": "那明天也要给我打电话！",
+          "reply": "ㅋㅋㅋ 看看明天的安排。有空就打给你ㅎㅎ",
+          "affection_delta": 1,
+          "flirt_delta": 0
+        }
+      ]
+    },
+    "runtime_notes": [
+      "暧昧值<60不抽取clingy",
+      "只有好感度>60才能出现公主/宝宝",
+      "数值奖励单次结算一次",
+      "男主忙时可以拒绝或改约",
+      "视频为模拟界面，不使用真实摄像头"
+    ]
+  },
+  "instagram": {
+    "status": "剧情规则与文案数据；尚未连接Instagram发布界面和游戏运行时",
+    "post_types": {
+      "post": {
+        "duration_hours": null,
+        "interaction_surface": "公开评论"
+      },
+      "story": {
+        "duration_hours": 24,
+        "interaction_surface": "私密快拍回复，不显示公开评论"
+      }
+    },
+    "publish": {
+      "allow_linked_lead": true,
+      "max_linked_leads": 1,
+      "link_is_private_story_metadata": true,
+      "link_is_public_tag": false,
+      "unlinked_random_commenter_count": [
+        1,
+        3
+      ],
+      "linked_lead_reaction_probability": 1.0,
+      "unlinked_comments_pool": [
+        "漂亮ㅋㅋ",
+        "今天也很漂亮ㅎㅎ",
+        "这张拍得不错诶",
+        "看起来好好玩ㅋㅋ",
+        "下次一起吧",
+        "这是哪里？",
+        "哇，天气真好",
+        "怎么没叫我ㅋㅋ",
+        "拍得真好看",
+        "这个我也想去！",
+        "ㅋㅋㅋㅋ好可爱",
+        "今天玩得开心吗？",
+        "谁给你拍的？拍得不错",
+        "好羡慕ㅠㅠ",
+        "这个地方我知道！",
+        "下次带我去ㅎㅎ",
+        "啊，这个好吃吗？",
+        "照片氛围好好",
+        "今天的穿搭不错ㅋㅋ",
+        "感觉你今天心情很好ㅎㅎ"
+      ],
+      "linked_comments_pool": [
+        "漂亮ㅎㅎ",
+        "下次也跟我一起吧",
+        "所以我是特殊的吗？ㅋㅋ",
+        "这张我喜欢",
+        "怎么不先发给我看？",
+        "今天真的很好看",
+        "下次我给你拍",
+        "ㅋㅋㅋ 我知道这是哪里",
+        "今天玩得开心吗？",
+        "我是不是应该得到一点特别待遇？ㅎㅎ"
+      ],
+      "linked_comments_preferred": [
+        "漂亮ㅎㅎ",
+        "下次也跟我一起吧",
+        "所以我是特殊的吗？ㅋㅋ"
+      ],
+      "linked_low_affection_pool": [
+        "漂亮ㅎㅎ",
+        "下次一起吧",
+        "这张拍得不错"
+      ],
+      "linked_high_affection_pool": [
+        "怎么不先发给我看？",
+        "下次也跟我一起吧",
+        "所以我是特殊的吗？ㅋㅋ"
+      ]
+    },
+    "jealousy": {
+      "other_leads_pool": [
+        "为什么不跟我一起？",
+        "他是谁？",
+        "……呵",
+        "ㅋㅋㅋㅋ原来如此",
+        "看来玩得挺开心啊",
+        "我怎么不知道这件事？",
+        "下次也带我一个？",
+        "哦？",
+        "所以我错过了什么？",
+        "原来你今天有约啊ㅋㅋ",
+        "你们很熟吗？",
+        "ㅋㅋㅋ有意思",
+        "我还以为你今天很忙呢",
+        "那我呢？",
+        "……知道了ㅎㅎ"
+      ],
+      "affection_thresholds": [
+        {
+          "min": 0,
+          "max": 49,
+          "comment_probability": 0,
+          "dm_probability": 0
+        },
+        {
+          "min": 50,
+          "max": 60,
+          "comment_probability": 0.15,
+          "dm_probability": 0.1
+        },
+        {
+          "min": 61,
+          "max": 80,
+          "comment_probability": 0.4,
+          "dm_probability": 0.25
+        },
+        {
+          "min": 81,
+          "max": 100,
+          "comment_probability": 0.65,
+          "dm_probability": 0.45
+        }
+      ],
+      "max_jealous_dms_per_publication": 1,
+      "comment_and_dm_independent": true,
+      "public_comments_should_be_subtle": true,
+      "require_visible_clue_or_public_flirt_for_explicit_identity_accusation": true,
+      "kakaotalk_scene_ids": [
+        "jealous-story",
+        "jealous-like",
+        "jealous-brother",
+        "jealous-other-dog",
+        "jealous-jacket",
+        "jealous-familiar"
+      ]
+    },
+    "likes": {
+      "male_leads_can_like_without_comment": true,
+      "notification_template": "❤️ 【男主】赞了你的帖子"
+    },
+    "reply_to_comment": {
+      "max_rounds": 1,
+      "player_options": [
+        "好呀，下次约会？",
+        "哥哥请客吗ㅋㅋ",
+        "那就说好了！"
+      ],
+      "male_lead_reactions": [
+        "ㅋㅋㅋ 好啊",
+        "那说好了ㅎㅎ",
+        "喜欢这条回复 ❤️"
+      ]
+    },
+    "exposure_risk": {
+      "ordinary_photo": [
+        0,
+        0
+      ],
+      "linked_without_obvious_clue": [
+        0,
+        2
+      ],
+      "identifiable_clues": [
+        3,
+        8
+      ],
+      "obvious_couple_photo": [
+        10,
+        20
+      ],
+      "private_link_alone_does_not_raise_risk": true
+    },
+    "runtime_notes": [
+      "按图片标签筛选自然评论，避免风景照收到食物评论",
+      "发布时随机评论与点赞可延时出现",
+      "story互动以私密回复呈现",
+      "其他男主不能知道内部关联字段，只能根据公开线索推断",
+      "每成员数值独立，按对应成员好感度决定嫉妒概率",
+      "此数据不代表功能已经实现"
+    ]
+  },
+  "x_timeline": {
+    "version": "1.0",
+    "status": "content_library_not_wired_to_UI",
+    "placeholder": "【男主名】",
+    "normal_posts": [
+      {
+        "id": "normal_01",
+        "handle": "@deerism",
+        "text": "【男主名】直拍帅得我好想尿啊啊啊啊啊 完全天神降临 我父父我男神我欧巴",
+        "category": "颜值"
+      },
+      {
+        "id": "normal_02",
+        "handle": "@fathercomplex",
+        "text": "我欧巴把脸唱坏了怎么办！有脸就已经足够…❤️",
+        "category": "颜值"
+      },
+      {
+        "id": "normal_03",
+        "handle": "@visualterrorist",
+        "text": "【男主名】你到底是怎么长成这样的 凭什么",
+        "category": "颜值"
+      },
+      {
+        "id": "normal_04",
+        "handle": "@notyourwife",
+        "text": "我警告你们再把我爸发网上我们连陌生人都没得做",
+        "category": "颜值"
+      },
+      {
+        "id": "normal_05",
+        "handle": "@myfather",
+        "text": "所有人把内库和熊兆撕拉到操场集合 保持内库干燥抱歉我做不到。",
+        "category": "颜值"
+      },
+      {
+        "id": "normal_06",
+        "handle": "@prettyboyhell",
+        "text": "李柱延席卷过的地方女人们都晕过去了，李贤在过来又活过来，金泳勋一来大家又开始大喊世界上怎么会有人长这么帅",
+        "category": "颜值"
+      },
+      {
+        "id": "normal_07",
+        "handle": "@juyeonplease",
+        "text": "柱延爸爸你来扮演我的同桌、学长、联姻对象、前男友、前夫、敌对公司老总、修车工、隔壁邻居、修水管的、审讯我的警察……你想演哪个都行我不挑",
+        "category": "梦女"
+      },
+      {
+        "id": "normal_08",
+        "handle": "@marriedinmyhead",
+        "text": "【男主名】你好 我是你还没认识的老婆 请问我们什么时候方便认识一下",
+        "category": "梦女"
+      },
+      {
+        "id": "normal_09",
+        "handle": "@deluludivision",
+        "text": "我跟【男主名】的婚姻目前遇到一点困难 主要是他还不知道这段婚姻的存在",
+        "category": "梦女"
+      },
+      {
+        "id": "normal_10",
+        "handle": "@fatherwife",
+        "text": "老公不要再这么帅了 我真的没精力每天重新爱上你一次",
+        "category": "梦女"
+      },
+      {
+        "id": "normal_11",
+        "handle": "@jealousofair",
+        "text": "好羡慕李贤在的内裤呀 可以每天贴在小贤在身上",
+        "category": "梦女"
+      },
+      {
+        "id": "normal_12",
+        "handle": "@emergencywife",
+        "text": "【男主名】这张照片我不敢看第二遍 第一遍已经结婚了 第二遍怕直接生二胎",
+        "category": "梦女"
+      },
+      {
+        "id": "normal_13",
+        "handle": "@thebstage",
+        "text": "欧巴们这次回归舞台又是唱得很好看❤️ 好安心 消音依旧哑巴",
+        "category": "舞台"
+      },
+      {
+        "id": "normal_14",
+        "handle": "@fancamaddict",
+        "text": "【男主名】这次直拍必须列入世界文化遗产",
+        "category": "舞台"
+      },
+      {
+        "id": "normal_15",
+        "handle": "@miccheck",
+        "text": "每次有人说他们只靠脸 然后消音一开 怎么没人说话了",
+        "category": "舞台"
+      },
+      {
+        "id": "normal_16",
+        "handle": "@stagecriminal",
+        "text": "【男主名】你舞台上那个眼神是什么意思 隔着屏幕就不用负责吗",
+        "category": "舞台"
+      },
+      {
+        "id": "normal_17",
+        "handle": "@bubblevictim",
+        "text": "【男主名】今天又发二十条毫无意义的私信 谁家爱豆把私信当家族群聊",
+        "category": "日常"
+      },
+      {
+        "id": "normal_18",
+        "handle": "@kpopzoo",
+        "text": "我团到底为什么这么吵 一个唱歌一个笑一个在后面摔东西",
+        "category": "日常"
+      },
+      {
+        "id": "normal_19",
+        "handle": "@idolresearch",
+        "text": "【男主名】今天又发自拍了 我宣布今天不用上班 精神状态不允许",
+        "category": "日常"
+      },
+      {
+        "id": "normal_20",
+        "handle": "@thebdefender",
+        "text": "谁又惹我爸了 我爸今天看起来不高兴",
+        "category": "日常"
+      }
+    ],
+    "exposure_posts": {
+      "21-40": [
+        {
+          "id": "risk_21_40_01",
+          "handle": "@somethingisoff",
+          "text": "有没有人觉得【男主名】最近有点奇怪……我不好说……"
+        },
+        {
+          "id": "risk_21_40_02",
+          "handle": "@deluluwarning",
+          "text": "老公，我捉奸癖犯了……"
+        },
+        {
+          "id": "risk_21_40_03",
+          "handle": "@phonewatcher",
+          "text": "【男主名】最近在物料里一直在看手机，在跟谁聊天？"
+        },
+        {
+          "id": "risk_21_40_04",
+          "handle": "@suspiciouswife",
+          "text": "他最近总是莫名其妙傻笑，我有预感、、、"
+        },
+        {
+          "id": "risk_21_40_05",
+          "handle": "@justjoking",
+          "text": "我爸最近怎么这么开心 有什么好事不能告诉我吗"
+        },
+        {
+          "id": "risk_21_40_06",
+          "handle": "@overthinking",
+          "text": "他看手机那个表情像我朋友刚谈恋爱 我先声明我在造谣我自己"
+        }
+      ],
+      "41-60": [
+        {
+          "id": "risk_41_60_01",
+          "handle": "@matchingitems",
+          "text": "【男主名】昨天照片里的手机壳怎么感觉在哪见过？"
+        },
+        {
+          "id": "risk_41_60_02",
+          "handle": "@coincidenceornot",
+          "text": "这个戒指最近是不是出现过两次？"
+        },
+        {
+          "id": "risk_41_60_03",
+          "handle": "@leavehimalone",
+          "text": "同款就同款 全世界只有他能买吗"
+        },
+        {
+          "id": "risk_41_60_04",
+          "handle": "@timelinegirl",
+          "text": "【男主名】昨天是不是在圣水洞？"
+        },
+        {
+          "id": "risk_41_60_05",
+          "handle": "@notaconspiracy",
+          "text": "这个时间线有点巧 没说他们一定认识"
+        },
+        {
+          "id": "risk_41_60_06",
+          "handle": "@pleasebehonest",
+          "text": "有没有人整理一下这几天的行程"
+        },
+        {
+          "id": "risk_41_60_07",
+          "handle": "@backgroundcheck",
+          "text": "这个咖啡厅的窗户是不是一样的？"
+        },
+        {
+          "id": "risk_41_60_08",
+          "handle": "@touchgrass",
+          "text": "你们已经开始研究窗户了吗 出去晒晒太阳吧"
+        }
+      ],
+      "61-80": [
+        {
+          "id": "risk_61_80_01",
+          "handle": "@spottedinseoul",
+          "text": "有人说在汉南洞看到【男主名】旁边还有一个人 图太糊了"
+        },
+        {
+          "id": "risk_61_80_02",
+          "handle": "@whosthat",
+          "text": "他旁边那个背影是谁啊"
+        },
+        {
+          "id": "risk_61_80_03",
+          "handle": "@calmdown",
+          "text": "一张糊得像马赛克的照片你们已经给人家孩子起名字了"
+        },
+        {
+          "id": "risk_61_80_04",
+          "handle": "@threadcollector",
+          "text": "最近几个巧合：相似地点、同款配饰、时间重叠、疑似同行照片；不下结论"
+        },
+        {
+          "id": "risk_61_80_05",
+          "handle": "@rationalfan",
+          "text": "前三条不能算证据 第四条脸都看不清"
+        },
+        {
+          "id": "risk_61_80_06",
+          "handle": "@husbandplease",
+          "text": "希望他幸福 但先让我缓一会儿"
+        },
+        {
+          "id": "risk_61_80_07",
+          "handle": "@idollife",
+          "text": "爱豆也是人 就算谈恋爱又怎么了"
+        },
+        {
+          "id": "risk_61_80_08",
+          "handle": "@parasocialcrisis",
+          "text": "道理我都懂 但现在有点难受"
+        }
+      ],
+      "81-100": [
+        {
+          "id": "risk_81_100_01",
+          "handle": "@breakingidol",
+          "text": "【男主名】疑似恋爱？今天流出的照片到底什么情况"
+        },
+        {
+          "id": "risk_81_100_02",
+          "handle": "@whatsgoingon",
+          "text": "刚睡醒 谁告诉我发生了什么"
+        },
+        {
+          "id": "risk_81_100_03",
+          "handle": "@timelinearchive",
+          "text": "整理了最近的时间线 目前仍无正式回应"
+        },
+        {
+          "id": "risk_81_100_04",
+          "handle": "@protecthim",
+          "text": "没有实锤能不能不要乱传"
+        },
+        {
+          "id": "risk_81_100_05",
+          "handle": "@disappointed",
+          "text": "喜欢了他很多年 我需要一点时间接受"
+        },
+        {
+          "id": "risk_81_100_06",
+          "handle": "@adultfan",
+          "text": "谈恋爱又不是犯罪"
+        },
+        {
+          "id": "risk_81_100_07",
+          "handle": "@stopstalking",
+          "text": "比起恋爱我更想知道谁一直跟拍他的私人行程"
+        }
+      ]
+    },
+    "comment_pools": {
+      "normal": [
+        {
+          "id": "comment_normal_01",
+          "handle": "@fatherlover",
+          "text": "你先别报警 我已经在去民政局的路上了",
+          "stance": "梦女"
+        },
+        {
+          "id": "comment_normal_02",
+          "handle": "@juyeonwife",
+          "text": "能不能别发我老公了我真的会吃醋",
+          "stance": "梦女"
+        },
+        {
+          "id": "comment_normal_03",
+          "handle": "@thebzone",
+          "text": "那个转身我反复看了二十遍",
+          "stance": "普通粉"
+        },
+        {
+          "id": "comment_normal_04",
+          "handle": "@notdelulu",
+          "text": "你们都疯了只有我正常地想跟他结婚",
+          "stance": "辱追"
+        },
+        {
+          "id": "comment_normal_05",
+          "handle": "@deerism",
+          "text": "回复 @notdelulu：你比我们病得还重",
+          "stance": "辱追"
+        }
+      ],
+      "suspicion": [
+        {
+          "id": "comment_suspicion_01",
+          "handle": "@detectivegirl",
+          "text": "上次直播也是一直低头看手机",
+          "stance": "怀疑派"
+        },
+        {
+          "id": "comment_suspicion_02",
+          "handle": "@protecttheboyz",
+          "text": "没有证据不要传播对成员私生活的猜测",
+          "stance": "正规军"
+        },
+        {
+          "id": "comment_suspicion_03",
+          "handle": "@normaltheb",
+          "text": "可能只是在回工作消息啊",
+          "stance": "理智粉"
+        },
+        {
+          "id": "comment_suspicion_04",
+          "handle": "@hiswife",
+          "text": "我老公背着我跟谁聊天……？",
+          "stance": "梦女"
+        },
+        {
+          "id": "comment_suspicion_05",
+          "handle": "@divorcehim",
+          "text": "结婚了我也能当他前妻",
+          "stance": "辱追"
+        },
+        {
+          "id": "comment_suspicion_06",
+          "handle": "@passingby",
+          "text": "看手机也能看出恋爱？",
+          "stance": "路人"
+        }
+      ],
+      "matching": [
+        {
+          "id": "comment_matching_01",
+          "handle": "@timelinegirl",
+          "text": "好像真的是同款……",
+          "stance": "怀疑派"
+        },
+        {
+          "id": "comment_matching_02",
+          "handle": "@juyeonprotect",
+          "text": "同款不代表恋爱 请停止传播未经证实的消息",
+          "stance": "正规军"
+        },
+        {
+          "id": "comment_matching_03",
+          "handle": "@fatherwife",
+          "text": "爸爸求你告诉我这是巧合",
+          "stance": "梦女"
+        },
+        {
+          "id": "comment_matching_04",
+          "handle": "@divorcedwife",
+          "text": "宣布离婚了 虽然他没同意结婚",
+          "stance": "辱追"
+        },
+        {
+          "id": "comment_matching_05",
+          "handle": "@reasonablefan",
+          "text": "这牌子的戒指很多人都有",
+          "stance": "理智粉"
+        },
+        {
+          "id": "comment_matching_06",
+          "handle": "@angrytheb",
+          "text": "如果是真的我可能会脱粉",
+          "stance": "激进粉"
+        },
+        {
+          "id": "comment_matching_07",
+          "handle": "@meloncollector",
+          "text": "谁能补一下前情提要",
+          "stance": "路人"
+        }
+      ],
+      "photo": [
+        {
+          "id": "comment_photo_01",
+          "handle": "@detectivegirl",
+          "text": "那个背影感觉真的很像……",
+          "stance": "怀疑派"
+        },
+        {
+          "id": "comment_photo_02",
+          "handle": "@protecttheboyz",
+          "text": "请停止传播私人行程照片 不要猜测同行者身份",
+          "stance": "正规军"
+        },
+        {
+          "id": "comment_photo_03",
+          "handle": "@myhusband",
+          "text": "我现在笑不出来了",
+          "stance": "梦女"
+        },
+        {
+          "id": "comment_photo_04",
+          "handle": "@divorceclub",
+          "text": "现在正式成为前妻 财产分割什么时候开始",
+          "stance": "辱追"
+        },
+        {
+          "id": "comment_photo_05",
+          "handle": "@normaltheb",
+          "text": "就算是他也不代表旁边的是恋爱对象",
+          "stance": "理智粉"
+        },
+        {
+          "id": "comment_photo_06",
+          "handle": "@angryfan",
+          "text": "最近不是还在回归吗",
+          "stance": "激进粉"
+        },
+        {
+          "id": "comment_photo_07",
+          "handle": "@justwatching",
+          "text": "脸都看不清就吵成这样",
+          "stance": "路人"
+        },
+        {
+          "id": "comment_photo_08",
+          "handle": "@antisincebirth",
+          "text": "早就说了他没那么完美ㅋㅋ",
+          "stance": "黑粉"
+        }
+      ],
+      "crisis": [
+        {
+          "id": "comment_crisis_01",
+          "handle": "@protecttheboyz",
+          "text": "官方回应前不要传播未经证实的信息 尊重隐私",
+          "stance": "正规军"
+        },
+        {
+          "id": "comment_crisis_02",
+          "handle": "@hisprincess",
+          "text": "喜欢了他好多年 现在不知道该说什么",
+          "stance": "梦女"
+        },
+        {
+          "id": "comment_crisis_03",
+          "handle": "@divorceclub",
+          "text": "从今天起不当老婆 我要当恶毒前妻",
+          "stance": "辱追"
+        },
+        {
+          "id": "comment_crisis_04",
+          "handle": "@normaltheb",
+          "text": "他是成年人 有自己的私人生活很正常",
+          "stance": "理智粉"
+        },
+        {
+          "id": "comment_crisis_05",
+          "handle": "@angrytheb",
+          "text": "不是反对恋爱 但为什么是回归期间",
+          "stance": "激进粉"
+        },
+        {
+          "id": "comment_crisis_06",
+          "handle": "@passingby",
+          "text": "有什么实锤吗 怎么感觉都是猜测",
+          "stance": "路人"
+        },
+        {
+          "id": "comment_crisis_07",
+          "handle": "@antiaccount",
+          "text": "平时营业那么认真 私底下这样ㅋㅋ",
+          "stance": "黑粉"
+        },
+        {
+          "id": "comment_crisis_08",
+          "handle": "@stopstalking",
+          "text": "不要传播偷拍的私人行程",
+          "stance": "理智粉"
+        }
+      ]
+    },
+    "rules": {
+      "comment_ui": "点击评论图标展开当前帖子的评论；允许一层楼中楼；默认热门，可切换最新",
+      "persistent_handles": true,
+      "post_counts": "同一帖子互动量首次生成后持久化",
+      "feed_size": 10,
+      "normal_feed_remains_at_high_risk": true,
+      "exposure_boundaries": [
+        20,
+        40,
+        60,
+        80
+      ],
+      "evidence": "同款、地点、偶遇等证据帖必须由真实游戏事件或玩家已发布内容支持，不能无中生有",
+      "exposure_is_per_member": true,
+      "player_can_like_posts_and_comments": true,
+      "comment_stances": [
+        "正规军",
+        "辱追",
+        "理智粉",
+        "梦女",
+        "怀疑派",
+        "激进粉",
+        "路人",
+        "黑粉"
+      ],
+      "one_level_replies_only": true,
+      "crisis": "风险>80时沿用既定好感度80分界的危机剧情"
+    }
+  },
+  "shopping": {
+    "version": 1,
+    "status": "story_data_only_not_wired_to_runtime",
+    "scope": "post_purchase_kakaotalk_only",
+    "scenes": [
+      {
+        "id": "shop_after_purchase_01",
+        "title": "首次使用副卡",
+        "trigger_key": "first_card",
+        "affection_range": "50-60",
+        "opening_messages": [
+          "终于用我的卡了ㅋㅋ",
+          "买了什么？"
+        ],
+        "choices": [
+          {
+            "text": "买了个小东西ㅎㅎ",
+            "reply_messages": [
+              "什么小东西？ㅋㅋㅋ还神神秘秘的。喜欢就好，不用每次都跟我汇报。"
+            ],
+            "affection_delta": 1,
+            "flirt_delta": 0
+          },
+          {
+            "text": "哥哥一直在等我刷卡吗？",
+            "reply_messages": [
+              "没有啊ㅋㅋ只是给你那么久了，一直没收到通知，还以为你不想用呢。"
+            ],
+            "affection_delta": 0,
+            "flirt_delta": 2
+          },
+          {
+            "text": "对不起，忘记提前跟哥哥说了ㅠㅠ",
+            "reply_messages": [
+              "干嘛道歉？我自己给你的卡啊，又不是偷刷的ㅋㅋ别这么紧张。"
+            ],
+            "affection_delta": 2,
+            "flirt_delta": 0
+          }
+        ]
+      },
+      {
+        "id": "shop_after_purchase_02",
+        "title": "就买了一块布丁？",
+        "trigger_key": "small_dessert",
+        "affection_range": "50-100",
+        "opening_messages": [
+          "刚刚那个付款通知是什么ㅋㅋ",
+          "₩6,500？"
+        ],
+        "choices": [
+          {
+            "text": "买布丁了！",
+            "reply_messages": [
+              "布丁？ㅋㅋㅋㅋ怎么这么可爱。我还以为你买了什么。好吃吗？"
+            ],
+            "affection_delta": 2,
+            "flirt_delta": 0
+          },
+          {
+            "text": "哥哥连这个都要管吗ㅠㅠ",
+            "reply_messages": [
+              "不是管你ㅋㅋ就是觉得金额很可爱。我给你卡不是让你只敢买布丁的。"
+            ],
+            "affection_delta": 0,
+            "flirt_delta": 2
+          },
+          {
+            "text": "因为突然想吃甜的。",
+            "reply_messages": [
+              "那就多吃点好吃的。不过别光吃甜的，晚饭也要好好吃ㅎㅎ"
+            ],
+            "affection_delta": 2,
+            "flirt_delta": 0
+          }
+        ]
+      },
+      {
+        "id": "shop_after_purchase_03",
+        "title": "炸鸡是一个人吃的吗？",
+        "trigger_key": "fried_chicken",
+        "affection_range": "50-100",
+        "opening_messages": [
+          "炸鸡？",
+          "ㅋㅋㅋㅋ买了好多啊"
+        ],
+        "choices": [
+          {
+            "text": "因为我很能吃！",
+            "reply_messages": [
+              "知道了ㅋㅋㅋㅋ吃得开心就好。不过吃不完也不用勉强自己。"
+            ],
+            "affection_delta": 1,
+            "flirt_delta": 0
+          },
+          {
+            "text": "和朋友一起吃的ㅎㅎ",
+            "reply_messages": [
+              "哦，和朋友啊。那我请客了？ㅋㅋㅋ替我跟他们说好好吃。"
+            ],
+            "affection_delta": 2,
+            "flirt_delta": 0
+          },
+          {
+            "text": "哥哥也想吃吗？",
+            "reply_messages": [
+              "当然想吃。你这样突然给我看炸鸡，我现在也饿了ㅋㅋ你要负责。"
+            ],
+            "affection_delta": 0,
+            "flirt_delta": 2
+          }
+        ]
+      },
+      {
+        "id": "shop_after_purchase_04",
+        "title": "新买的包包",
+        "trigger_key": "luxury_bag",
+        "affection_range": "55-100",
+        "opening_messages": [
+          "刚刚是不是买包了？",
+          "哪个牌子的？"
+        ],
+        "choices": [
+          {
+            "text": "Chanel的！好漂亮ㅠㅠ",
+            "reply_messages": [
+              "哦ㅋㅋㅋ眼光不错嘛。给我看看照片。真的很漂亮，感觉很适合你。下次背出来给我看看ㅎㅎ"
+            ],
+            "affection_delta": 2,
+            "flirt_delta": 2
+          },
+          {
+            "text": "有点贵……",
+            "reply_messages": [
+              "喜欢吗？那就好了。你怎么比我还在意价格ㅋㅋ买都买了，就开开心心地用。"
+            ],
+            "affection_delta": 2,
+            "flirt_delta": 0
+          },
+          {
+            "text": "哥哥猜猜看？",
+            "reply_messages": [
+              "Hermès？Dior？ㅋㅋㅋ我怎么猜得到。快点告诉我，我也想看看你的新包。"
+            ],
+            "affection_delta": 0,
+            "flirt_delta": 2
+          }
+        ]
+      },
+      {
+        "id": "shop_after_purchase_05",
+        "title": "项链戴上一定很漂亮",
+        "trigger_key": "jewelry",
+        "affection_range": "50-100",
+        "opening_messages": [
+          "买首饰了？",
+          "什么样的？"
+        ],
+        "choices": [
+          {
+            "text": "买了一条项链！",
+            "reply_messages": [
+              "给我看看。哇，这个真的很好看。不过戴在你身上应该更漂亮ㅎㅎ"
+            ],
+            "affection_delta": 0,
+            "flirt_delta": 3
+          },
+          {
+            "text": "哥哥觉得我适合戴什么？",
+            "reply_messages": [
+              "嗯……我觉得简单一点的？但其实你戴什么都挺好看的。ㅋㅋㅋ是不是回答得太随便了？"
+            ],
+            "affection_delta": 0,
+            "flirt_delta": 3
+          },
+          {
+            "text": "因为想变得更漂亮一点。",
+            "reply_messages": [
+              "已经很漂亮了啊。还要变得多漂亮？ㅋㅋㅋ不过喜欢的话就买吧。"
+            ],
+            "affection_delta": 2,
+            "flirt_delta": 2
+          }
+        ]
+      },
+      {
+        "id": "shop_after_purchase_06",
+        "title": "买了新衣服",
+        "trigger_key": "clothes",
+        "affection_range": "50-100",
+        "opening_messages": [
+          "今天买衣服了？",
+          "什么风格的？"
+        ],
+        "choices": [
+          {
+            "text": "有点可爱的风格ㅎㅎ",
+            "reply_messages": [
+              "ㅋㅋㅋ那应该很适合你。拍张照片给我看看？我有点好奇。"
+            ],
+            "affection_delta": 0,
+            "flirt_delta": 2
+          },
+          {
+            "text": "比较成熟的那种。",
+            "reply_messages": [
+              "哦？突然走成熟路线了？感觉会很好看。我想看看ㅎㅎ"
+            ],
+            "affection_delta": 0,
+            "flirt_delta": 2
+          },
+          {
+            "text": "哥哥喜欢我穿什么风格？",
+            "reply_messages": [
+              "我吗？其实你喜欢的就好。但如果非要我选，我比较喜欢你穿自己觉得漂亮的衣服，因为那时候你看起来最开心。"
+            ],
+            "affection_delta": 3,
+            "flirt_delta": 0
+          }
+        ]
+      },
+      {
+        "id": "shop_after_purchase_07",
+        "title": "新手机？",
+        "trigger_key": "electronics",
+        "affection_range": "50-100",
+        "opening_messages": [
+          "等等ㅋㅋ",
+          "你买新手机了？"
+        ],
+        "choices": [
+          {
+            "text": "对！旧手机不好用了。",
+            "reply_messages": [
+              "那确实该换了。新的用起来怎么样？数据都转过去了吗？"
+            ],
+            "affection_delta": 2,
+            "flirt_delta": 0
+          },
+          {
+            "text": "哥哥会帮我设置吗？",
+            "reply_messages": [
+              "ㅋㅋㅋ你是不是把我当售后服务了？不过哪里不会？我看看能不能教你。"
+            ],
+            "affection_delta": 2,
+            "flirt_delta": 0
+          },
+          {
+            "text": "那我以后可以拍更多照片给哥哥看了。",
+            "reply_messages": [
+              "哦？那我是不是应该期待一下。ㅋㅋㅋ记得第一张自拍发给我。"
+            ],
+            "affection_delta": 0,
+            "flirt_delta": 3
+          }
+        ]
+      },
+      {
+        "id": "shop_after_purchase_08",
+        "title": "香水是什么味道？",
+        "trigger_key": "perfume",
+        "affection_range": "50-100",
+        "opening_messages": [
+          "买香水了？",
+          "什么味道？"
+        ],
+        "choices": [
+          {
+            "text": "Le Labo Another 13！",
+            "reply_messages": [
+              "啊，我知道这个。你喜欢这种味道啊。感觉还挺适合你的。"
+            ],
+            "affection_delta": 0,
+            "flirt_delta": 2
+          },
+          {
+            "text": "哥哥喜欢什么味道？",
+            "reply_messages": [
+              "我喜欢的？嗯……不要太浓的吧。不过你喜欢的味道应该也不错。ㅋㅋㅋ怎么突然问我这个？"
+            ],
+            "affection_delta": 0,
+            "flirt_delta": 3
+          },
+          {
+            "text": "秘密，下次再告诉你ㅎㅎ",
+            "reply_messages": [
+              "什么啊ㅋㅋㅋ连香水味都要保密？好吧，那我先期待一下。"
+            ],
+            "affection_delta": 0,
+            "flirt_delta": 2
+          }
+        ]
+      },
+      {
+        "id": "shop_after_purchase_09",
+        "title": "今天花了不少啊",
+        "trigger_key": "high_value",
+        "affection_range": "50-80",
+        "opening_messages": [
+          "ㅋㅋㅋㅋ",
+          "等一下。",
+          "刚刚那个金额是认真的吗？"
+        ],
+        "choices": [
+          {
+            "text": "买了个很喜欢的东西……",
+            "reply_messages": [
+              "买了什么？给我看看ㅎㅎ哦，确实很好看。难怪你喜欢。"
+            ],
+            "affection_delta": 1,
+            "flirt_delta": 0
+          },
+          {
+            "text": "哥哥是不是心疼了？",
+            "reply_messages": [
+              "不是心疼ㅋㅋ只是突然看到这么大一笔付款，吓了一跳。你至少让我知道买了什么嘛。"
+            ],
+            "affection_delta": 0,
+            "flirt_delta": 2
+          },
+          {
+            "text": "那我退掉好了ㅠㅠ",
+            "reply_messages": [
+              "干嘛突然说要退？我又没说不让你买。喜欢就留着。不过下次买特别贵的东西，我们可以先商量一下，好吗？"
+            ],
+            "affection_delta": 2,
+            "flirt_delta": 0
+          }
+        ]
+      },
+      {
+        "id": "shop_after_purchase_10",
+        "title": "今天到底买了多少东西？",
+        "trigger_key": "frequent_spending",
+        "affection_range": "50-100",
+        "opening_messages": [
+          "ㅋㅋㅋㅋㅋㅋ",
+          "你今天是不是把商场搬回家了？"
+        ],
+        "choices": [
+          {
+            "text": "因为每个都好喜欢ㅠㅠ",
+            "reply_messages": [
+              "ㅋㅋㅋ知道了。但是你今天买得真的好多。有最喜欢的一个吗？给我看看。"
+            ],
+            "affection_delta": 1,
+            "flirt_delta": 0
+          },
+          {
+            "text": "哥哥在查账吗？",
+            "reply_messages": [
+              "没有查账ㅋㅋ只是通知一直跳出来，我还以为手机坏了。你是不是故意逗我？"
+            ],
+            "affection_delta": 0,
+            "flirt_delta": 2
+          },
+          {
+            "text": "那我以后不买了……",
+            "reply_messages": [
+              "我又没说不让你买，干嘛突然这样。只是觉得今天有点多，我们以后慢慢买也可以啊。"
+            ],
+            "affection_delta": 1,
+            "flirt_delta": 0
+          }
+        ]
+      },
+      {
+        "id": "shop_after_purchase_11",
+        "title": "所以我是你的什么人？",
+        "trigger_key": "status_talk_1",
+        "affection_range": "65-100",
+        "opening_messages": [
+          "我突然发现一件事。",
+          "你现在刷我的卡，好像已经特别自然了ㅋㅋ"
+        ],
+        "choices": [
+          {
+            "text": "因为哥哥对我最好了。",
+            "reply_messages": [
+              "只有这样？ㅋㅋㅋ我还以为……至少能得到一个特别一点的身份呢。"
+            ],
+            "affection_delta": 0,
+            "flirt_delta": 3
+          },
+          {
+            "text": "怎么啦，不给刷了？",
+            "reply_messages": [
+              "没说不给你刷ㅋㅋ只是你都这么自然地花我的钱了，是不是也应该对我负责一下？"
+            ],
+            "affection_delta": 0,
+            "flirt_delta": 4
+          },
+          {
+            "text": "那哥哥想要什么回报？",
+            "reply_messages": [
+              "回报？嗯……我其实不缺什么。但是如果有人问你我们是什么关系，我希望你不要再说只是朋友了。"
+            ],
+            "affection_delta": 0,
+            "flirt_delta": 4
+          }
+        ]
+      },
+      {
+        "id": "shop_after_purchase_12",
+        "title": "哥哥是在讨名分吗？",
+        "trigger_key": "status_talk_2",
+        "affection_range": "70-100",
+        "opening_messages": [
+          "我问你一个问题。",
+          "如果别人问你，我们是什么关系，你会怎么回答？"
+        ],
+        "choices": [
+          {
+            "text": "哥哥想当我男朋友吗？",
+            "reply_messages": [
+              "……你这算是在跟我告白吗？ㅋㅋㅋ我还以为这句话应该由我来说。不过……我确实想过。"
+            ],
+            "affection_delta": 0,
+            "flirt_delta": 5
+          },
+          {
+            "text": "哥哥是在讨名分吗ㅋㅋ",
+            "reply_messages": [
+              "嗯。不行吗？ㅋㅋㅋ我都等这么久了，总得让我知道有没有希望吧。"
+            ],
+            "affection_delta": 0,
+            "flirt_delta": 4
+          },
+          {
+            "text": "现在这样不好吗？",
+            "reply_messages": [
+              "不是不好，我也喜欢现在这样。只是偶尔会有点贪心。不过没关系，我不会逼你回答的。"
+            ],
+            "affection_delta": 1,
+            "flirt_delta": 0
+          }
+        ]
+      },
+      {
+        "id": "shop_after_purchase_13",
+        "title": "我的钱就是给你花的呀ㅋㅋ",
+        "trigger_key": "high_affection_luxury",
+        "affection_range": "81-100",
+        "opening_messages": [
+          "今天又买东西了？",
+          "买了什么？",
+          "喜欢吗？",
+          "ㅋㅋㅋ干嘛一直看价格。",
+          "我的钱就是给你花的呀ㅋㅋ",
+          "不然给你卡干什么。"
+        ],
+        "choices": [
+          {
+            "text": "哥哥这么宠我怎么办ㅠㅠ",
+            "reply_messages": [
+              "那就继续被我宠着呗。ㅋㅋㅋ有什么难的。"
+            ],
+            "affection_delta": 2,
+            "flirt_delta": 3
+          },
+          {
+            "text": "那我要把哥哥刷破产！",
+            "reply_messages": [
+              "ㅋㅋㅋㅋㅋㅋ你先试试看。不过真把我刷破产了，你要负责养我。说好了？"
+            ],
+            "affection_delta": 0,
+            "flirt_delta": 3
+          },
+          {
+            "text": "可是我也想给哥哥买东西。",
+            "reply_messages": [
+              "给我？ㅋㅋㅋ突然这么乖。不用买贵的，你亲自挑的就行。我会好好珍惜的。"
+            ],
+            "affection_delta": 3,
+            "flirt_delta": 0
+          }
+        ]
+      },
+      {
+        "id": "shop_after_purchase_14",
+        "title": "为什么不用我的卡？",
+        "trigger_key": "own_card_high_affection",
+        "affection_range": "81-100",
+        "opening_messages": [
+          "你今天是不是买东西了？",
+          "用自己的卡？",
+          "ㅋㅋㅋ我不是给你卡了吗？"
+        ],
+        "choices": [
+          {
+            "text": "总不能什么都让哥哥买吧。",
+            "reply_messages": [
+              "也没有说什么都要我买。只是你不用那么客气。我想对你好，是我自己愿意的。"
+            ],
+            "affection_delta": 3,
+            "flirt_delta": 0
+          },
+          {
+            "text": "因为想自己买给自己。",
+            "reply_messages": [
+              "啊，那当然可以。自己买给自己的礼物也很好。ㅋㅋㅋ我只是随便问问。"
+            ],
+            "affection_delta": 2,
+            "flirt_delta": 0
+          },
+          {
+            "text": "哥哥这么想给我花钱吗？",
+            "reply_messages": [
+              "嗯。ㅋㅋㅋ不可以吗？我喜欢给你买东西啊。看你开心，我也开心。"
+            ],
+            "affection_delta": 0,
+            "flirt_delta": 4
+          }
+        ]
+      },
+      {
+        "id": "shop_after_purchase_15",
+        "title": "我是不是太惯着你了？",
+        "trigger_key": "spoiling_rare",
+        "affection_range": "81-100",
+        "opening_messages": [
+          "我发现一个问题。",
+          "我是不是太惯着你了ㅋㅋ"
+        ],
+        "choices": [
+          {
+            "text": "那哥哥以后不要惯着我了ㅠㅠ",
+            "reply_messages": [
+              "为什么？ㅋㅋㅋ我又没说不好。只是你现在越来越会跟我撒娇了……其实我还挺喜欢的。"
+            ],
+            "affection_delta": 0,
+            "flirt_delta": 3
+          },
+          {
+            "text": "明明是哥哥自己愿意的！",
+            "reply_messages": [
+              "对啊，是我自己愿意的。所以呢？ㅋㅋㅋ现在是不是应该轮到你哄哄我了？"
+            ],
+            "affection_delta": 0,
+            "flirt_delta": 4
+          },
+          {
+            "text": "那哥哥后悔了吗？",
+            "reply_messages": [
+              "没有。一点都没有。只是突然觉得……我好像真的很喜欢你。不然怎么会连这种事情都觉得开心。"
+            ],
+            "affection_delta": 2,
+            "flirt_delta": 5
+          }
+        ]
+      }
+    ],
+    "rules": {
+      "addressing": "affection <= 60 player nickname only; affection > 60 may occasionally use 宝宝/公主",
+      "once_per_purchase": "at most one full scene",
+      "no_repeat": "avoid consecutive repeats; first_card and status_talk_1/2 once per lead",
+      "prerequisites": {
+        "status_talk_1": "affection>=65, flirt>=60, card_uses>=5, not_in_relationship",
+        "status_talk_2": "status_talk_1_completed, affection>=70, flirt>=70",
+        "high_value": "single purchase >= KRW 3000000",
+        "frequent_spending": "at least 3 purchases in 24h with elevated total"
+      },
+      "no_date_followup_or_long_term_purchase_memory": true,
+      "separate_per_lead": true,
+      "note": "The scenes are script assets; runtime triggers, notifications, inventory and payments are not implemented."
+    }
+  },
+  "music": {
+    "version": 1,
+    "playlist": {
+      "id": "flirting_playlist",
+      "title": "暧昧歌单",
+      "tracks": [
+        {
+          "id": "intentions",
+          "title": "intentions (Explicit)",
+          "artist": "starfall",
+          "source": "user_screenshot",
+          "audio_url": null,
+          "cover_url": null,
+          "share_enabled": true,
+          "listen_together_enabled": true
+        },
+        {
+          "id": "oppa_dongsaeng",
+          "title": "오빠, 동생 (Feat. 상추)",
+          "artist": "G.NA (지나) / 상추",
+          "source": "user_screenshot",
+          "audio_url": null,
+          "cover_url": null,
+          "share_enabled": true,
+          "listen_together_enabled": true
+        },
+        {
+          "id": "answer_phone",
+          "title": "전화좀 받아",
+          "artist": "F.CUZ (포커즈)",
+          "source": "user_screenshot",
+          "audio_url": null,
+          "cover_url": null,
+          "share_enabled": true,
+          "listen_together_enabled": true
+        },
+        {
+          "id": "all_i_have_is_love",
+          "title": "All I Have Is Love",
+          "artist": "史蒂文·黄",
+          "source": "user_screenshot",
+          "audio_url": null,
+          "cover_url": null,
+          "share_enabled": true,
+          "listen_together_enabled": true
+        },
+        {
+          "id": "invention_of_love",
+          "title": "연애의 발명",
+          "artist": "BIG Naughty (서동현)",
+          "source": "user_screenshot",
+          "audio_url": null,
+          "cover_url": null,
+          "share_enabled": true,
+          "listen_together_enabled": true
+        },
+        {
+          "id": "you_know",
+          "title": "있잖아",
+          "artist": "Paul Kim (폴킴)",
+          "source": "user_screenshot",
+          "audio_url": null,
+          "cover_url": null,
+          "share_enabled": true,
+          "listen_together_enabled": true
+        }
+      ]
+    },
+    "features": {
+      "share_song": {
+        "enabled_in_design": true,
+        "runtime_implemented": false
+      },
+      "listen_together": {
+        "enabled_in_design": true,
+        "runtime_implemented": false
+      }
+    },
+    "notes": "曲目来自用户提供的歌单截图。仅含歌曲元数据，无音频、封面或流媒体播放授权。",
+    "listen_together": {
+      "version": 1,
+      "random_dialogue_count": 10,
+      "scenes": [
+        {
+          "id": "listen_together_01",
+          "title": "你是不是故意的？",
+          "opening": [
+            {
+              "ko": "잠깐만ㅋㅋ",
+              "zh": "等一下ㅋㅋ"
+            },
+            {
+              "ko": "너 이 노래 일부러 고른 거지?",
+              "zh": "你是不是故意选这首歌的？"
+            }
+          ],
+          "choices": [
+            {
+              "id": "A",
+              "player": {
+                "ko": "일부러 뭘?",
+                "zh": "故意什么？"
+              },
+              "reply": [
+                {
+                  "ko": "ㅋㅋㅋ 됐어. 못 들은 걸로 해.",
+                  "zh": "ㅋㅋㅋ算了，当我没问。"
+                },
+                {
+                  "ko": "근데 가사가 진짜 반칙이네.",
+                  "zh": "不过歌词真的挺犯规的。"
+                }
+              ]
+            },
+            {
+              "id": "B",
+              "player": {
+                "ko": "응, 오빠 들으라고 일부러 골랐지.",
+                "zh": "对呀，专门放给哥哥听的。"
+              },
+              "reply": [
+                {
+                  "ko": "……너 지금 나 꼬시는 거야?",
+                  "zh": "……你现在是在撩我吗？"
+                },
+                {
+                  "ko": "ㅋㅋㅋ 그럼 나 진심으로 받아들인다?",
+                  "zh": "ㅋㅋㅋ那我可要当真了。"
+                }
+              ]
+            },
+            {
+              "id": "C",
+              "player": {
+                "ko": "오빠 무슨 이상한 생각 했어?",
+                "zh": "哥哥想到什么奇怪的事情了？"
+              },
+              "reply": [
+                {
+                  "ko": "이상한 생각 아니거든ㅋㅋ",
+                  "zh": "才不是什么奇怪的事情ㅋㅋ"
+                },
+                {
+                  "ko": "그냥 네 생각.",
+                  "zh": "是你。"
+                },
+                {
+                  "ko": "……아, 됐다. 말 안 할래.",
+                  "zh": "……啊，算了，不说了。"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "listen_together_02",
+          "title": "怎么一直不说话？",
+          "opening": [
+            {
+              "ko": "왜 이렇게 조용해?",
+              "zh": "怎么这么安静？"
+            },
+            {
+              "ko": "뭐 해?",
+              "zh": "在干嘛？"
+            }
+          ],
+          "choices": [
+            {
+              "id": "A",
+              "player": {
+                "ko": "오빠 생각하고 있었어.",
+                "zh": "在想哥哥。"
+              },
+              "reply": [
+                {
+                  "ko": "……ㅋㅋㅋ",
+                  "zh": "……ㅋㅋㅋ"
+                },
+                {
+                  "ko": "그럼 나도 네 생각하고 있었다고 해야 하나?",
+                  "zh": "那我现在是不是应该说，我也在想你？"
+                }
+              ]
+            },
+            {
+              "id": "B",
+              "player": {
+                "ko": "노래 열심히 듣고 있지~",
+                "zh": "在认真听歌呀。"
+              },
+              "reply": [
+                {
+                  "ko": "아, 그래?ㅋㅋ",
+                  "zh": "哦，是吗ㅋㅋ"
+                },
+                {
+                  "ko": "난 네가 내가 먼저 말 걸길 기다리는 줄 알았는데.",
+                  "zh": "我还以为你在等我先说话。"
+                }
+              ]
+            },
+            {
+              "id": "C",
+              "player": {
+                "ko": "오빠한테 무슨 말을 해야 할지 모르겠어.",
+                "zh": "因为不知道跟哥哥说什么。"
+              },
+              "reply": [
+                {
+                  "ko": "꼭 무슨 말을 해야 하는 건 아니잖아.",
+                  "zh": "不用非得说什么。"
+                },
+                {
+                  "ko": "그냥 이렇게 같이 듣는 것도 좋은데.",
+                  "zh": "就这样一起听着也挺好的。"
+                },
+                {
+                  "ko": "……네가 같이 있다는 건 아니까.",
+                  "zh": "……反正我知道你在。"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "listen_together_03",
+          "title": "你听到那句了吗？",
+          "opening": [
+            {
+              "ko": "방금 그 가사 있잖아……",
+              "zh": "刚刚那句歌词……"
+            },
+            {
+              "ko": "들었어?",
+              "zh": "你听到了吗？"
+            }
+          ],
+          "choices": [
+            {
+              "id": "A",
+              "player": {
+                "ko": "어떤 거? 오빠가 불러 줘.",
+                "zh": "哪句？哥哥唱给我听。"
+              },
+              "reply": [
+                {
+                  "ko": "ㅋㅋㅋ 갑자기 노래를 부르라고?",
+                  "zh": "ㅋㅋㅋ怎么突然让我唱？"
+                },
+                {
+                  "ko": "……다음에.",
+                  "zh": "……下次吧。"
+                },
+                {
+                  "ko": "지금 부르면 좀 부끄러울 것 같아.",
+                  "zh": "现在唱的话有点害羞。"
+                }
+              ]
+            },
+            {
+              "id": "B",
+              "player": {
+                "ko": "들었지. 그래서?",
+                "zh": "听到了，所以呢？"
+              },
+              "reply": [
+                {
+                  "ko": "아무것도 아니야.",
+                  "zh": "没什么。"
+                },
+                {
+                  "ko": "그냥……",
+                  "zh": "就是突然觉得……"
+                },
+                {
+                  "ko": "노래를 빌리면 어떤 말은 좀 더 쉽게 할 수 있을 것 같아서.",
+                  "zh": "有些话借着歌说出来，好像容易一点。"
+                }
+              ]
+            },
+            {
+              "id": "C",
+              "player": {
+                "ko": "오빠 나한테 하고 싶은 말 있어?",
+                "zh": "哥哥是不是想跟我说什么？"
+              },
+              "reply": [
+                {
+                  "ko": "……꼭 그렇게 직접 물어봐야 돼?",
+                  "zh": "……你一定要问得这么直接吗？"
+                },
+                {
+                  "ko": "ㅋㅋㅋ 아직 어떻게 말할지 못 정했어.",
+                  "zh": "ㅋㅋㅋ我还没想好怎么说。"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "listen_together_04",
+          "title": "比起歌，我更在意你",
+          "opening": [
+            {
+              "ko": "사실 나 방금 노래에 집중 못 했어.",
+              "zh": "其实我刚刚没怎么认真听。"
+            }
+          ],
+          "choices": [
+            {
+              "id": "A",
+              "player": {
+                "ko": "왜?!",
+                "zh": "为什么！"
+              },
+              "reply": [
+                {
+                  "ko": "네가 메시지 보냈나 계속 확인하느라ㅋㅋ",
+                  "zh": "因为一直在看你有没有发消息ㅋㅋ"
+                },
+                {
+                  "ko": "어떡하지.",
+                  "zh": "怎么办。"
+                },
+                {
+                  "ko": "나 좀 집중이 안 되네.",
+                  "zh": "好像有点分心了。"
+                }
+              ]
+            },
+            {
+              "id": "B",
+              "player": {
+                "ko": "오빠 무슨 생각했어?",
+                "zh": "哥哥在想什么？"
+              },
+              "reply": [
+                {
+                  "ko": "그냥……",
+                  "zh": "就是……"
+                },
+                {
+                  "ko": "너도 지금 이어폰 끼고 있을까 싶어서.",
+                  "zh": "你现在是不是也戴着耳机。"
+                },
+                {
+                  "ko": "나랑 똑같은 소리 듣고 있는 거잖아.",
+                  "zh": "跟我听着一样的声音。"
+                },
+                {
+                  "ko": "좀 신기하다ㅎㅎ",
+                  "zh": "感觉有点奇妙ㅎㅎ"
+                }
+              ]
+            },
+            {
+              "id": "C",
+              "player": {
+                "ko": "그럼 오빠랑 같이 안 들을래!",
+                "zh": "那我不跟哥哥一起听了！"
+              },
+              "reply": [
+                {
+                  "ko": "아 왜ㅋㅋ",
+                  "zh": "啊，为什么ㅋㅋ"
+                },
+                {
+                  "ko": "듣기 싫다는 게 아니잖아.",
+                  "zh": "我又不是不想听。"
+                },
+                {
+                  "ko": "그냥 노래보다……",
+                  "zh": "只是比起歌……"
+                },
+                {
+                  "ko": "됐다. 무슨 말인지 알지?",
+                  "zh": "算了，你知道的吧？"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "listen_together_05",
+          "title": "想听你的声音",
+          "opening": [
+            {
+              "ko": "갑자기 좀 아쉽네.",
+              "zh": "突然觉得有点可惜。"
+            }
+          ],
+          "choices": [
+            {
+              "id": "A",
+              "player": {
+                "ko": "뭐가 아쉬워?",
+                "zh": "什么可惜？"
+              },
+              "reply": [
+                {
+                  "ko": "같이 노래 듣고 있는데",
+                  "zh": "明明在一起听歌，"
+                },
+                {
+                  "ko": "네 목소리는 못 듣잖아.",
+                  "zh": "却听不到你的声音。"
+                },
+                {
+                  "ko": "ㅋㅋㅋ 좀 이상하지?",
+                  "zh": "ㅋㅋㅋ有点奇怪吧。"
+                }
+              ]
+            },
+            {
+              "id": "B",
+              "player": {
+                "ko": "그럼 전화할까?",
+                "zh": "那给哥哥打电话？"
+              },
+              "reply": [
+                {
+                  "ko": "……진짜?",
+                  "zh": "……真的？"
+                },
+                {
+                  "ko": "ㅋㅋㅋ 그런 말 함부로 하지 마.",
+                  "zh": "ㅋㅋㅋ你别随便说这种话。"
+                },
+                {
+                  "ko": "나 진짜 지금 바로 전화하고 싶어지니까.",
+                  "zh": "我会想马上打过去的。"
+                }
+              ]
+            },
+            {
+              "id": "C",
+              "player": {
+                "ko": "오빠 나 보고 싶어?",
+                "zh": "哥哥想我了吗？"
+              },
+              "reply": [
+                {
+                  "ko": "응.",
+                  "zh": "嗯。"
+                },
+                {
+                  "ko": "……이렇게 대답하면 돼?",
+                  "zh": "……这样回答可以吗？"
+                },
+                {
+                  "ko": "ㅋㅋㅋ",
+                  "zh": "ㅋㅋㅋ"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "listen_together_06",
+          "title": "这首歌以后归我们了",
+          "opening": [
+            {
+              "ko": "나중에 이 노래 다시 들으면……",
+              "zh": "我觉得以后再听到这首歌……"
+            },
+            {
+              "ko": "네 생각날 것 같아.",
+              "zh": "应该会想到你。"
+            }
+          ],
+          "choices": [
+            {
+              "id": "A",
+              "player": {
+                "ko": "그럼 이제 우리 노래야?",
+                "zh": "那这就是我们的歌了？"
+              },
+              "reply": [
+                {
+                  "ko": "우리 노래?",
+                  "zh": "我们的歌？"
+                },
+                {
+                  "ko": "ㅋㅋㅋ 괜찮은데?",
+                  "zh": "ㅋㅋㅋ听起来还不错。"
+                },
+                {
+                  "ko": "그럼 그렇게 하자.",
+                  "zh": "那就这样说好了。"
+                }
+              ]
+            },
+            {
+              "id": "B",
+              "player": {
+                "ko": "오빠는 그렇게 쉽게 내 생각이 나?",
+                "zh": "哥哥这么容易想我呀？"
+              },
+              "reply": [
+                {
+                  "ko": "쉽게 그런 건 아닌데.",
+                  "zh": "也不是容易。"
+                },
+                {
+                  "ko": "그냥……",
+                  "zh": "就是……"
+                },
+                {
+                  "ko": "요즘은 뭘 봐도 네 생각이 나.",
+                  "zh": "最近好像什么都能想到你。"
+                },
+                {
+                  "ko": "ㅋㅋㅋ 이상하지.",
+                  "zh": "ㅋㅋㅋ真奇怪。"
+                }
+              ]
+            },
+            {
+              "id": "C",
+              "player": {
+                "ko": "그럼 다른 사람이랑 이 노래 듣지 마!",
+                "zh": "那哥哥不许和别人一起听！"
+              },
+              "reply": [
+                {
+                  "ko": "ㅋㅋㅋㅋ 갑자기 왜 이렇게 욕심이 많아.",
+                  "zh": "ㅋㅋㅋㅋ怎么突然这么霸道。"
+                },
+                {
+                  "ko": "알겠어.",
+                  "zh": "好吧。"
+                },
+                {
+                  "ko": "이 노래는 너랑만 들을게.",
+                  "zh": "这首歌就只跟你一起听。"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "listen_together_07",
+          "title": "你现在脸红了吗？",
+          "opening": [
+            {
+              "ko": "ㅋㅋㅋㅋ",
+              "zh": "ㅋㅋㅋㅋ"
+            },
+            {
+              "ko": "나 갑자기 궁금한 거 생겼어.",
+              "zh": "我突然有点好奇。"
+            },
+            {
+              "ko": "너 지금 무슨 표정이야?",
+              "zh": "你现在是什么表情？"
+            }
+          ],
+          "choices": [
+            {
+              "id": "A",
+              "player": {
+                "ko": "웃고 있지ㅎㅎ",
+                "zh": "在笑呀ㅎㅎ"
+              },
+              "reply": [
+                {
+                  "ko": "그럴 줄 알았어ㅋㅋ",
+                  "zh": "我就知道ㅋㅋ"
+                },
+                {
+                  "ko": "지금 엄청 귀엽게 웃고 있을 것 같은데.",
+                  "zh": "感觉你现在一定笑得很可爱。"
+                }
+              ]
+            },
+            {
+              "id": "B",
+              "player": {
+                "ko": "얼굴 빨개졌어……",
+                "zh": "脸红了……"
+              },
+              "reply": [
+                {
+                  "ko": "……진짜?",
+                  "zh": "……真的？"
+                },
+                {
+                  "ko": "아 어떡해.",
+                  "zh": "啊，怎么办。"
+                },
+                {
+                  "ko": "갑자기 너무 보고 싶은데.",
+                  "zh": "突然好想看看。"
+                }
+              ]
+            },
+            {
+              "id": "C",
+              "player": {
+                "ko": "무표정인데?",
+                "zh": "面无表情。"
+              },
+              "reply": [
+                {
+                  "ko": "ㅋㅋㅋ 거짓말.",
+                  "zh": "ㅋㅋㅋ骗人。"
+                },
+                {
+                  "ko": "아까 나한테 애교 부렸잖아.",
+                  "zh": "你刚刚明明还在跟我撒娇。"
+                },
+                {
+                  "ko": "어떻게 아무렇지도 않을 수 있어.",
+                  "zh": "怎么可能一点反应都没有。"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "listen_together_08",
+          "title": "哥哥有喜欢的人吗？",
+          "opening": [
+            {
+              "ko": "이 노래……",
+              "zh": "这首歌……"
+            },
+            {
+              "ko": "좋아하는 사람한테 들려주는 노래 같아.",
+              "zh": "好像是唱给喜欢的人听的。"
+            }
+          ],
+          "choices": [
+            {
+              "id": "A",
+              "player": {
+                "ko": "오빠는 좋아하는 사람 있어?",
+                "zh": "哥哥有喜欢的人吗？"
+              },
+              "reply": [
+                {
+                  "ko": "……있으면?",
+                  "zh": "……有的话呢？"
+                },
+                {
+                  "ko": "ㅋㅋㅋ 누군지 궁금해?",
+                  "zh": "ㅋㅋㅋ你会好奇是谁吗？"
+                }
+              ]
+            },
+            {
+              "id": "B",
+              "player": {
+                "ko": "그럼 오빠는 지금 누구 생각났어?",
+                "zh": "那哥哥现在想到谁了？"
+              },
+              "reply": [
+                {
+                  "ko": "진짜 알고 싶어?",
+                  "zh": "你真的想知道？"
+                },
+                {
+                  "ko": "……아니다.",
+                  "zh": "……算了。"
+                },
+                {
+                  "ko": "말했다가 네가 나랑 노래 안 들어 줄까 봐ㅋㅋ",
+                  "zh": "我怕说出来以后，你就不肯陪我听歌了ㅋㅋ"
+                }
+              ]
+            },
+            {
+              "id": "C",
+              "player": {
+                "ko": "나는 생각나는 사람 있는데.",
+                "zh": "我倒是有想到一个人。"
+              },
+              "reply": [
+                {
+                  "ko": "누구?",
+                  "zh": "谁？"
+                },
+                {
+                  "ko": "……잠깐만.",
+                  "zh": "……等一下。"
+                },
+                {
+                  "ko": "ㅋㅋㅋ 나 이거 물어보면 안 되는 거였나?",
+                  "zh": "ㅋㅋㅋ我是不是不应该问？"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "listen_together_09",
+          "title": "再陪我一会儿",
+          "opening": [
+            {
+              "ko": "시간 왜 이렇게 빨리 가지?",
+              "zh": "怎么感觉时间过得这么快。"
+            },
+            {
+              "ko": "방금 듣기 시작한 것 같은데.",
+              "zh": "明明才刚开始听。"
+            }
+          ],
+          "choices": [
+            {
+              "id": "A",
+              "player": {
+                "ko": "좋아하는 사람이랑 있으니까 그렇지.",
+                "zh": "因为跟喜欢的人在一起呀。"
+              },
+              "reply": [
+                {
+                  "ko": "……잠깐만.",
+                  "zh": "……等一下。"
+                },
+                {
+                  "ko": "방금 뭐라고 했어?",
+                  "zh": "你刚刚说什么？"
+                },
+                {
+                  "ko": "ㅋㅋㅋ 한 번만 더 말해 주면 안 돼?",
+                  "zh": "ㅋㅋㅋ我可以再听一遍吗？"
+                }
+              ]
+            },
+            {
+              "id": "B",
+              "player": {
+                "ko": "오빠 나랑 헤어지기 아쉬워?",
+                "zh": "哥哥舍不得我吗？"
+              },
+              "reply": [
+                {
+                  "ko": "응.",
+                  "zh": "嗯。"
+                },
+                {
+                  "ko": "조금.",
+                  "zh": "有一点。"
+                },
+                {
+                  "ko": "ㅋㅋㅋ 이제 만족해?",
+                  "zh": "ㅋㅋㅋ你满意了吗？"
+                }
+              ]
+            },
+            {
+              "id": "C",
+              "player": {
+                "ko": "그럼 한 곡 더 듣자!",
+                "zh": "那我们再听一首！"
+              },
+              "reply": [
+                {
+                  "ko": "좋아.",
+                  "zh": "好啊。"
+                },
+                {
+                  "ko": "네가 골라.",
+                  "zh": "你选。"
+                },
+                {
+                  "ko": "……나도 아직 가기 싫거든.",
+                  "zh": "……反正我还不想走。"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "listen_together_10",
+          "title": "差一点就说出口了",
+          "opening": [
+            {
+              "ko": "나 방금 어떤 말 할 뻔했어.",
+              "zh": "我刚刚差点说了一句话。"
+            }
+          ],
+          "choices": [
+            {
+              "id": "A",
+              "player": {
+                "ko": "무슨 말? 나한테 말해 줘.",
+                "zh": "什么话？告诉我嘛。"
+              },
+              "reply": [
+                {
+                  "ko": "안 돼ㅋㅋ",
+                  "zh": "不行ㅋㅋ"
+                },
+                {
+                  "ko": "그 말 해 버리면……",
+                  "zh": "说出来的话……"
+                },
+                {
+                  "ko": "우리 지금 같은 사이로는 못 지낼 것 같아서.",
+                  "zh": "我们现在这种关系可能就维持不下去了。"
+                }
+              ]
+            },
+            {
+              "id": "B",
+              "player": {
+                "ko": "나 좋아한다는 말?",
+                "zh": "是喜欢我吗？"
+              },
+              "reply": [
+                {
+                  "ko": "……너는 왜 맨날 그래.",
+                  "zh": "……你怎么总是这样。"
+                },
+                {
+                  "ko": "ㅋㅋㅋ 내가 부끄러워할 거 알면서.",
+                  "zh": "ㅋㅋㅋ明明知道我会害羞。"
+                },
+                {
+                  "ko": "일부러 그러지?",
+                  "zh": "还故意问。"
+                }
+              ]
+            },
+            {
+              "id": "C",
+              "player": {
+                "ko": "그럼 오빠가 말하고 싶을 때 말해 줘.",
+                "zh": "那等哥哥想说的时候再告诉我。"
+              },
+              "reply": [
+                {
+                  "ko": "응.",
+                  "zh": "嗯。"
+                },
+                {
+                  "ko": "고마워.",
+                  "zh": "谢谢。"
+                },
+                {
+                  "ko": "……근데 그때는",
+                  "zh": "……不过我希望到时候，"
+                },
+                {
+                  "ko": "좋은 대답 들을 수 있었으면 좋겠다.",
+                  "zh": "能听到一个好答案。"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "rules": {
+        "selection": "random",
+        "no_time_song_affection_conditions": true,
+        "avoid_immediate_repeat": true,
+        "choices_per_scene": 3,
+        "language": "ko_zh",
+        "previous_eight_scenes_excluded": true,
+        "audio_not_included": true
+      }
+    }
+  }
+}

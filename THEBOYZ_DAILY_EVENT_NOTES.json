@@ -1,0 +1,20 @@
+{
+  "status": "剧情事件已加入；实时调度、昵称替换、亲昵称呼随机、语音媒体、数值封顶需运行时支持",
+  "addressing": {
+    "affection_lte_60": "【玩家昵称】",
+    "affection_gt_60": [
+      "公主",
+      "宝宝"
+    ],
+    "threshold_strict": true
+  },
+  "recommended_schedule": {
+    "morning_probability": 0.65,
+    "night_probability": 0.7,
+    "daily_probability": 0.6,
+    "song_probability": 0.3,
+    "max_daily_messages_per_member": 3
+  },
+  "event_count_per_member": 16,
+  "note": "目前事件可在故事选择树内选取；不是自动按时推送。"
+}

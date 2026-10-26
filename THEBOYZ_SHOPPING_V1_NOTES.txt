@@ -1,0 +1,1 @@
+Shopping Market: 15 post-purchase KakaoTalk scenes, each with 3 player choices and replies. Story data only; no runtime UI or payment implementation. No follow-up date scenes or long-term purchase memory.

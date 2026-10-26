@@ -1,0 +1,3 @@
+Instagram V1 剧情整合
+普通评论20条、关联评论10条、吃醋评论15条、点赞与单轮评论回复、快拍私密回复、KakaoTalk吃醋联动、曝光风险规则均见 THEBOYZ_INTERACTIONS_LIBRARY.json 中 instagram 字段。
+注意：当前为剧情/配置数据，未接入运行时，不能保证网页功能可用。

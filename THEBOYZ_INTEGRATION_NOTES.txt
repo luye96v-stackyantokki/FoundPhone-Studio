@@ -1,0 +1,6 @@
+已将14组新剧情（6组吃醋、6组撒娇、哄我、电话邀请）接入故事选择树，并保留此前16组日常事件与3组旧对话。
+6个快捷键以故事选择树入口呈现，尚非KakaoTalk界面真实按钮。
+好感度高低分支目前为剧情文本说明，尚未实现运行时自动判定与随机昵称；冷却时间和触发事件同样待开发。
+请勿将此ZIP直接视为已测试可部署版本。
+
+VIDEO CALL V1: story data added to THEBOYZ_INTERACTIONS_LIBRARY.json under video_call. Runtime/UI not yet wired.

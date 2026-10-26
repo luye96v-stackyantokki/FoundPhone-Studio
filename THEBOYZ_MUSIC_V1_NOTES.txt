@@ -1,0 +1,2 @@
+首批6首歌曲已加入 THEBOYZ_INTERACTIONS_LIBRARY.json 的 music.playlist.tracks。
+只添加曲目元数据；未接入真实音源、封面、播放、一起听或分享按钮。
