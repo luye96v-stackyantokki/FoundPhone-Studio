@@ -20,6 +20,7 @@ jobs:
           node-version: 22
           cache: npm
       - run: npm ci
+      - run: echo "STORY_FILE=story.json" >> "$GITHUB_ENV"
       - run: npm run typecheck
       - run: npm run lint
       - run: npm test
